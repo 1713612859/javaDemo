@@ -1,4 +1,4 @@
-package com.test.strategy.impl;
+package com.test.strategy.impl.file;
 
 import com.test.strategy.FileStrategy;
 import org.springframework.stereotype.Component;

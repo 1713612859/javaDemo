@@ -2,10 +2,10 @@ package com.test.controller;
 
 import com.test.strategy.FileStrategy;
 import com.test.strategy.context.FileUploadContext;
-import com.test.strategy.impl.AliyunFile;
-import com.test.strategy.impl.AwsFile;
-import com.test.strategy.impl.DefaultFile;
-import com.test.strategy.impl.MiniIOFile;
+import com.test.strategy.impl.file.AliyunFile;
+import com.test.strategy.impl.file.AwsFile;
+import com.test.strategy.impl.file.DefaultFile;
+import com.test.strategy.impl.file.MiniIOFile;
 import jakarta.annotation.Resource;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.beans.factory.annotation.Value;
@@ -28,6 +28,9 @@ public class FileController {
 	 @Value("${upload.path}")
 	 private String UPLOAD_PATH;
 
+	 @Value("${upload.strategy}")
+	 private String strategy;
+
 	 @Resource
 	 private AwsFile awsFile;
 
@@ -39,9 +42,6 @@ public class FileController {
 
 	 @Resource
 	 private MiniIOFile miniIOFile;
-
-	 @Value("${upload.strategy}")
-	 private String strategy;
 
 	 @Resource
 	 private FileUploadContext fileUploadContext;

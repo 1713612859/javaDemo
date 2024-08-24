@@ -1,33 +1,33 @@
-package com.test.strategy.impl;
+package com.test.strategy.impl.file;
 
 import com.test.strategy.FileStrategy;
 import org.springframework.stereotype.Component;
 
 /**
- * @Desc MiniIOFile
+ * @Desc AwsFile
  * @Author LiuYunLong
  */
 
-@Component("miniIOFile")
-public class MiniIOFile implements FileStrategy {
+@Component("awsFile")
+public class AwsFile implements FileStrategy {
 	 @Override
 	 public void strategy() {
-		  System.out.println("MiniIOFile strategy");
+		  System.out.println("This is AWS File");
 	 }
 
 	 @Override
 	 public String upload(String fileName) {
-		  System.out.println("MiniIOFile upload fileName" + fileName);
+		  System.out.println("Uploading to AWS with file name: "+ fileName);
 		  return fileName;
 	 }
 
 	 @Override
 	 public void download() {
-		  System.out.println("MiniIOFile download");
+		  System.out.println("Downloading from AWS");
 	 }
 
 	 @Override
 	 public void delete() {
-		  System.out.println("MiniIOFile delete");
+		  System.out.println("Deleting from AWS");
 	 }
 }

@@ -1,4 +1,4 @@
-package com.test.strategy.impl;
+package com.test.strategy.impl.discount;
 
 import com.test.strategy.DiscountStrategy;
 

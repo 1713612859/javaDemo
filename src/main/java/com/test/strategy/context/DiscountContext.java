@@ -1,10 +1,10 @@
 package com.test.strategy.context;
 
 import com.test.strategy.DiscountStrategy;
-import com.test.strategy.impl.BronzeMemberDiscount;
-import com.test.strategy.impl.GoldMemberDiscount;
-import com.test.strategy.impl.NoDiscount;
-import com.test.strategy.impl.SilverMemberDiscount;
+import com.test.strategy.impl.discount.BronzeMemberDiscount;
+import com.test.strategy.impl.discount.GoldMemberDiscount;
+import com.test.strategy.impl.discount.NoDiscount;
+import com.test.strategy.impl.discount.SilverMemberDiscount;
 
 /**
  * @Desc DiscountContext
