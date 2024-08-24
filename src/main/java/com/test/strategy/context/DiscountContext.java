@@ -1,4 +1,4 @@
-package com.test.context;
+package com.test.strategy.context;
 
 import com.test.strategy.DiscountStrategy;
 import com.test.strategy.impl.BronzeMemberDiscount;
